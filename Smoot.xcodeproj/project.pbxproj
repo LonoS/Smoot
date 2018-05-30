@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1656ED8620BEF4E1003E1D61 /* overlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = overlay.json; path = ../../../../../overlay.json; sourceTree = "<group>"; };
+		1656ED8820BF02EC003E1D61 /* MapStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyler.swift; sourceTree = "<group>"; };
 		16F490EC20BED6150068F1FF /* Smoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F490EF20BED6150068F1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F490F620BED6170068F1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 				16F4910120BED8D00068F1FF /* CustomPin.swift */,
 				16F4910420BED9740068F1FF /* MapKitView.swift */,
 				16F4910620BED9A60068F1FF /* Navigator.swift */,
+				1656ED8820BF02EC003E1D61 /* MapStyler.swift */,
 				16F4910820BEDB300068F1FF /* TransportTypes.swift */,
 				1656ED8620BEF4E1003E1D61 /* overlay.json */,
 			);
@@ -120,7 +122,6 @@
 				16F490E820BED6150068F1FF /* Sources */,
 				16F490E920BED6150068F1FF /* Frameworks */,
 				16F490EA20BED6150068F1FF /* Resources */,
-				75ECFBBDA972F8157F41DC3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,24 +181,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		75ECFBBDA972F8157F41DC3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Smoot/Pods-Smoot-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MapKitGoogleStyler/MapKitGoogleStyler.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapKitGoogleStyler.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smoot/Pods-Smoot-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BA89DA64B26A53EB2A0F048B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

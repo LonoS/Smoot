@@ -15,6 +15,8 @@ class MapView_NewRoute: UIViewController, MKMapViewDelegate{
     @IBOutlet weak var mapView: MKMapView!
     
     
+    var overlay : MKTileOverlay?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,36 +24,25 @@ class MapView_NewRoute: UIViewController, MKMapViewDelegate{
         mapView.delegate = self
         
 
-        setupTileRenderer()
+        mapView.add(setupTileRenderer())
+        let n = Navigator.init()
+        let nav = n.navigate(source: CLLocationCoordinate2D.init(latitude: 40.712775, longitude: -74.005973), destination: .init(latitude: 34.052234, longitude: -118.243685), sourceDate: Date.init(), transport: .AUTO, mapView: mapView)
+        
+        
     }
-
-    func setupTileRenderer() {
-        overlay = MapOverlay()
-        overlay!.canReplaceMapContent = true
-        mapView.add(overlay!, level: .aboveLabels)
-    }
-    var overlay : MKTileOverlay?
-    
     
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-//        if let tileOverlay = overlay as? MKTileOverlay {
-//            return MKTileOverlayRenderer(tileOverlay: tileOverlay)
-//        } else {
-//            return MKOverlayRenderer(overlay: overlay)
-//        }
-        return MKTileOverlayRenderer.init(overlay: self.overlay!)
-    }
-    
-}
-
-class MapOverlay: MKTileOverlay{
-    
-    override func url(forTilePath path: MKTileOverlayPath) -> URL {
-
-        let template = "https://b.basemaps.cartocdn.com/rastertiles/dark_all/\(path.z)/\(path.x)/\(path.y).png"
-        
-        return URL(string: template)!
+        if(overlay.isKind(of: MKPolyline.classForCoder())){
+            let renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.strokeColor = UIColor.blue
+            renderer.lineWidth = 4.0
+            return renderer
+        }else if(overlay.isKind(of: MKTileOverlay.classForCoder())){
+            return MKTileOverlayRenderer.init(overlay: self.overlay!)
+        }else{
+            return MKTileOverlayRenderer.init(overlay: overlay)
+        }
     }
     
     
