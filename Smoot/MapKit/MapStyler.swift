@@ -10,32 +10,8 @@ import Foundation
 import UIKit
 import MapKit
 
-extension MapView{
-    
-    public func setupTileRenderer() -> MKTileOverlay {
-        overlay = MapOverlay()
-        overlay!.canReplaceMapContent = true
-        return overlay!
-    }
-    
-    
-    
-    
-
-    
+extension MapView_NewRoute{
+   
 }
-
-class MapOverlay: MKTileOverlay{
-    
-    override func url(forTilePath path: MKTileOverlayPath) -> URL {
-        
-        let template = "https://b.basemaps.cartocdn.com/rastertiles/dark_all/\(path.z)/\(path.x)/\(path.y).png"
-        
-        return URL(string: template)!
-    }
-    
-    
-}
-
 
 

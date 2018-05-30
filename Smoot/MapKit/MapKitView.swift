@@ -31,6 +31,13 @@ class MapView_NewRoute: UIViewController, MKMapViewDelegate{
         
     }
     
+    public func setupTileRenderer() -> MKTileOverlay {
+        overlay = MapOverlay()
+        overlay!.canReplaceMapContent = true
+        return overlay!
+    }
+    
+    
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if(overlay.isKind(of: MKPolyline.classForCoder())){
@@ -47,4 +54,19 @@ class MapView_NewRoute: UIViewController, MKMapViewDelegate{
     
     
 }
+
+class MapOverlay: MKTileOverlay{
+    
+    override func url(forTilePath path: MKTileOverlayPath) -> URL {
+        
+        let template = "https://b.basemaps.cartocdn.com/rastertiles/dark_all/\(path.z)/\(path.x)/\(path.y).png"
+        
+        return URL(string: template)!
+    }
+    
+    
+}
+
+
+
 

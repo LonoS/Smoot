@@ -10,8 +10,8 @@ import Foundation
 
 class UserDefaultsManager {
     
-    let usernameKey = "usernameKey"
-    let eventlistKeys = "eventlistKeys"
+    static let usernameKey = "usernameKey"
+    static let eventlistKeys = "eventlistKeys"
     
     
     
