@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		16F490F020BED6150068F1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F490EF20BED6150068F1FF /* AppDelegate.swift */; };
-		16F490F220BED6150068F1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F490F120BED6150068F1FF /* ViewController.swift */; };
 		16F490F520BED6150068F1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F490F320BED6150068F1FF /* Main.storyboard */; };
 		16F490F720BED6170068F1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F490F620BED6170068F1FF /* Assets.xcassets */; };
 		16F490FA20BED6170068F1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F490F820BED6170068F1FF /* LaunchScreen.storyboard */; };
@@ -17,12 +16,17 @@
 		16F4910720BED9A60068F1FF /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4910620BED9A60068F1FF /* Navigator.swift */; };
 		16F4910920BEDB300068F1FF /* TransportTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4910820BEDB300068F1FF /* TransportTypes.swift */; };
 		16F4910B20BEDC5E0068F1FF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4910A20BEDC5E0068F1FF /* AppSettings.swift */; };
+		983EA0CA20BEEC8800C8C79A /* Designed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983EA0C920BEEC8800C8C79A /* Designed.storyboard */; };
+		983EA0CC20BEEE7D00C8C79A /* icons8-settings-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 983EA0CB20BEEE7C00C8C79A /* icons8-settings-60.png */; };
+		983EA0CE20BEEEC800C8C79A /* icons8-settings-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 983EA0CD20BEEEC800C8C79A /* icons8-settings-filled-50.png */; };
+		983EA0D120BF015500C8C79A /* Pushy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EA0D020BF015500C8C79A /* Pushy.swift */; };
+		983EA0D320BF01DF00C8C79A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EA0D220BF01DF00C8C79A /* UserDefaultsManager.swift */; };
+		983EA0D520BF02B000C8C79A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EA0D420BF02B000C8C79A /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16F490EC20BED6150068F1FF /* Smoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F490EF20BED6150068F1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16F490F120BED6150068F1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16F490F420BED6150068F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16F490F620BED6170068F1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16F490F920BED6170068F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +36,12 @@
 		16F4910620BED9A60068F1FF /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		16F4910820BEDB300068F1FF /* TransportTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTypes.swift; sourceTree = "<group>"; };
 		16F4910A20BEDC5E0068F1FF /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		983EA0C920BEEC8800C8C79A /* Designed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Designed.storyboard; sourceTree = "<group>"; };
+		983EA0CB20BEEE7C00C8C79A /* icons8-settings-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-settings-60.png"; sourceTree = "<group>"; };
+		983EA0CD20BEEEC800C8C79A /* icons8-settings-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-settings-filled-50.png"; sourceTree = "<group>"; };
+		983EA0D020BF015500C8C79A /* Pushy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushy.swift; sourceTree = "<group>"; };
+		983EA0D220BF01DF00C8C79A /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		983EA0D420BF02B000C8C79A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +74,17 @@
 		16F490EE20BED6150068F1FF /* Smoot */ = {
 			isa = PBXGroup;
 			children = (
+				983EA0CF20BF012C00C8C79A /* Backend Stuff */,
 				16F490EF20BED6150068F1FF /* AppDelegate.swift */,
-				16F490F120BED6150068F1FF /* ViewController.swift */,
 				16F490F320BED6150068F1FF /* Main.storyboard */,
 				16F490F620BED6170068F1FF /* Assets.xcassets */,
+				983EA0CD20BEEEC800C8C79A /* icons8-settings-filled-50.png */,
+				983EA0CB20BEEE7C00C8C79A /* icons8-settings-60.png */,
 				16F490F820BED6170068F1FF /* LaunchScreen.storyboard */,
 				16F490FB20BED6170068F1FF /* Info.plist */,
 				16F4910A20BEDC5E0068F1FF /* AppSettings.swift */,
 				16F4910320BED8D80068F1FF /* MapKit */,
+				983EA0C920BEEC8800C8C79A /* Designed.storyboard */,
 			);
 			path = Smoot;
 			sourceTree = "<group>";
@@ -85,6 +98,16 @@
 				16F4910820BEDB300068F1FF /* TransportTypes.swift */,
 			);
 			path = MapKit;
+			sourceTree = "<group>";
+		};
+		983EA0CF20BF012C00C8C79A /* Backend Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				983EA0D020BF015500C8C79A /* Pushy.swift */,
+				983EA0D220BF01DF00C8C79A /* UserDefaultsManager.swift */,
+				983EA0D420BF02B000C8C79A /* Event.swift */,
+			);
+			path = "Backend Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +168,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983EA0CC20BEEE7D00C8C79A /* icons8-settings-60.png in Resources */,
+				983EA0CE20BEEEC800C8C79A /* icons8-settings-filled-50.png in Resources */,
 				16F490FA20BED6170068F1FF /* LaunchScreen.storyboard in Resources */,
+				983EA0CA20BEEC8800C8C79A /* Designed.storyboard in Resources */,
 				16F490F720BED6170068F1FF /* Assets.xcassets in Resources */,
 				16F490F520BED6150068F1FF /* Main.storyboard in Resources */,
 			);
@@ -159,12 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F4910520BED9740068F1FF /* MapKitView.swift in Sources */,
+				983EA0D320BF01DF00C8C79A /* UserDefaultsManager.swift in Sources */,
 				16F4910720BED9A60068F1FF /* Navigator.swift in Sources */,
 				16F4910B20BEDC5E0068F1FF /* AppSettings.swift in Sources */,
+				983EA0D520BF02B000C8C79A /* Event.swift in Sources */,
 				16F4910220BED8D00068F1FF /* CustomPin.swift in Sources */,
-				16F490F220BED6150068F1FF /* ViewController.swift in Sources */,
 				16F490F020BED6150068F1FF /* AppDelegate.swift in Sources */,
 				16F4910920BEDB300068F1FF /* TransportTypes.swift in Sources */,
+				983EA0D120BF015500C8C79A /* Pushy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4365VP3HP5;
+				DEVELOPMENT_TEAM = JD2YB3WD25;
 				INFOPLIST_FILE = Smoot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4365VP3HP5;
+				DEVELOPMENT_TEAM = JD2YB3WD25;
 				INFOPLIST_FILE = Smoot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
