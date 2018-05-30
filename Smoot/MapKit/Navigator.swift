@@ -12,7 +12,7 @@ import MapKit
 class Navigator{
     
     
-    public func navigate(source: CLLocationCoordinate2D, destination: CLLocationCoordinate2D, sourceDate : Date, transport: TransportTypes) -> (TimeInterval, MKRoute)?{
+    public func navigate(source: CLLocationCoordinate2D, destination: CLLocationCoordinate2D, sourceDate : Date, transport: TransportTypes, mapView: MKMapView){
         let directioner = MKDirectionsRequest()
         
         let sourcePlaceMark = MKPlacemark(coordinate: source)
@@ -62,14 +62,18 @@ class Navigator{
             let routes = directionResponse.routes[0]
             route = routes
             
+            DispatchQueue.main.async {
+                mapView.add(route!.polyline)
+            }
+            print(route!.polyline.pointCount)
+            let rect = route!.polyline.boundingMapRect
+            print("------------------------- EXPECTED TIME -------------------------")
+            print(Date.init(timeIntervalSinceNow: route!.expectedTravelTime))
+            
+            mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+            print("------------------------- CALCULATION IS COMPLETED -------------------------")
         }
         
-        
-        if let route = route{
-            return (route.expectedTravelTime, route)
-        }else{
-            return nil
-        }
         
         
         
