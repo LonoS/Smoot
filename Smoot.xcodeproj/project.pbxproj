@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1656ED8520BEE7AF003E1D61 /* Pods_Smoot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1656ED8420BEE7AF003E1D61 /* Pods_Smoot.framework */; };
-		1656ED8720BEF4E1003E1D61 /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 1656ED8620BEF4E1003E1D61 /* overlay.json */; };
 		16F490F020BED6150068F1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F490EF20BED6150068F1FF /* AppDelegate.swift */; };
-		16F490F520BED6150068F1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F490F320BED6150068F1FF /* Main.storyboard */; };
 		16F490F720BED6170068F1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F490F620BED6170068F1FF /* Assets.xcassets */; };
 		16F490FA20BED6170068F1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F490F820BED6170068F1FF /* LaunchScreen.storyboard */; };
 		16F4910220BED8D00068F1FF /* CustomPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F4910120BED8D00068F1FF /* CustomPin.swift */; };
@@ -27,11 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1656ED8420BEE7AF003E1D61 /* Pods_Smoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Smoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1656ED8620BEF4E1003E1D61 /* overlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = overlay.json; path = ../../../../../overlay.json; sourceTree = "<group>"; };
 		16F490EC20BED6150068F1FF /* Smoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F490EF20BED6150068F1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16F490F420BED6150068F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16F490F620BED6170068F1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16F490F920BED6170068F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16F490FB20BED6170068F1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1656ED8520BEE7AF003E1D61 /* Pods_Smoot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +59,6 @@
 			children = (
 				16F490EE20BED6150068F1FF /* Smoot */,
 				16F490ED20BED6150068F1FF /* Products */,
-				D67BF2739E9C028BC254646E /* Pods */,
-				CC6BA3E3F536313A7DB11FD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +75,6 @@
 			children = (
 				983EA0CF20BF012C00C8C79A /* Backend Stuff */,
 				16F490EF20BED6150068F1FF /* AppDelegate.swift */,
-				16F490F320BED6150068F1FF /* Main.storyboard */,
 				16F490F620BED6170068F1FF /* Assets.xcassets */,
 				983EA0CD20BEEEC800C8C79A /* icons8-settings-filled-50.png */,
 				983EA0CB20BEEE7C00C8C79A /* icons8-settings-60.png */,
@@ -183,7 +174,6 @@
 				16F490FA20BED6170068F1FF /* LaunchScreen.storyboard in Resources */,
 				983EA0CA20BEEC8800C8C79A /* Designed.storyboard in Resources */,
 				16F490F720BED6170068F1FF /* Assets.xcassets in Resources */,
-				16F490F520BED6150068F1FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +238,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		16F490F320BED6150068F1FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16F490F420BED6150068F1FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		16F490F820BED6170068F1FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -383,7 +365,6 @@
 		};
 		16F490FF20BED6170068F1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B65162B6A7B9CBFABBAE86B7 /* Pods-Smoot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,7 +375,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lab73.Smoot;
+				PRODUCT_BUNDLE_IDENTIFIER = lab73.Smooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +384,6 @@
 		};
 		16F4910020BED6170068F1FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22AACFBC63397459914BBC23 /* Pods-Smoot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,7 +394,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lab73.Smoot;
+				PRODUCT_BUNDLE_IDENTIFIER = lab73.Smooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
